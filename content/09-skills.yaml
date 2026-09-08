@@ -1,0 +1,42 @@
+# Skills & Strengths panel. `languages[].level` is out of `max_level` (filled dots).
+programming:
+  - "Python"
+  - "PyTorch"
+  - "TensorFlow"
+  - "Keras"
+  - "Scikit-learn"
+  - "Bash"
+  - "Docker"
+  - "Git"
+  - "TeX"
+
+strengths:
+  - "Continuous Learning"
+  - "Critical Thinking"
+  - "Problem Solving"
+  - "Collaboration"
+  - "Curiosity"
+  - "Attention to Detail"
+  - "Adaptability"
+
+interests:
+  - "Artificial Intelligence"
+  - "Deep Learning"
+  - "Medical Imaging"
+  - "Healthcare"
+  - "Research"
+  - "Segmentation"
+  - "Classification"
+
+max_level: 5
+languages:
+  - name: "Portuguese"
+    level: 5
+  - name: "English"
+    level: 4
+  - name: "Spanish"
+    level: 3
+
+focus: >-
+  Deep Learning applied to medical imaging — stroke outcome prediction, cardiac MR, and
+  brain tumour segmentation — from research through to deployable clinical AI products.

@@ -1,0 +1,10 @@
+  <footer>
+    <div class="wrap">
+      <div class="flinks">
+{% for l in hero.links %}
+        <a href="{{ l.url }}" target="_blank" rel="noopener">{{ l.label }}</a>
+{% endfor %}
+      </div>
+      <small>© <span id="yr"></span> {{ hero.name }} · {{ site.location }} · {{ site.footer_note }}</small>
+    </div>
+  </footer>

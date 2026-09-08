@@ -1,0 +1,20 @@
+# Education cards. `body_html` allows inline tags (e.g. <em>) — escape entities yourself
+# there (&amp; not &); every other field is plain text and gets auto-escaped.
+items:
+  - badge: "PhD"
+    title: "Doctor of Philosophy"
+    sub: "Informatics MAP-i"
+    when: "2015 — 2020"
+    body_html: "Thesis: <em>Automatic Prediction of Ischaemic Stroke from MRI images using Deep Learning.</em>"
+
+  - badge: "Research"
+    title: "Research Internship"
+    sub: "ISTB — University of Bern"
+    when: "Oct 2016 — Dec 2018 · Bern, Switzerland"
+    body_html: "Invited by Prof. Mauricio Reyes to predict final ischaemic stroke lesions, integrating imaging with patient meta-data for improved outcome prediction."
+
+  - badge: "MSc"
+    title: "Biomedical Engineering"
+    sub: "Medical Electronics Branch"
+    when: "2010 — 2015 · University of Minho, Braga"
+    body_html: "Foundation in medical electronics, signal &amp; image processing, and biomedical systems."

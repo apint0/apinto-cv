@@ -1,0 +1,24 @@
+  <header class="hero">
+    <div class="wrap">
+     <div class="hero-grid">
+      <div>
+      <div class="eyebrow">{{ hero.eyebrow }}</div>
+      <h1 class="name">{{ hero.name }}</h1>
+      <p class="role">{{ hero.role_plain }} &nbsp;·&nbsp; <b>{{ hero.role_bold }}</b></p>
+      <p class="summary">
+        {{ hero.summary }}
+      </p>
+      <div class="links">
+{% for l in hero.links %}
+        <a href="{{ l.url }}" target="_blank" rel="noopener" aria-label="{{ l.label }}">
+          {{ m.icon(l.icon) }}
+          {{ l.label }}
+        </a>
+{% endfor %}
+      </div>
+      </div>
+      <img class="hero-photo" src="{{ hero.photo }}" alt="{{ hero.name }}"
+           onerror="this.replaceWith(Object.assign(document.createElement('div'),{className:'hero-photo hero-monogram',textContent:'{{ hero.initials }}'}))" />
+     </div>
+    </div>
+  </header>

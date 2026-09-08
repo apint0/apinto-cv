@@ -1,0 +1,11 @@
+      <div class="grid three">
+{% for it in education['items'] %}
+        <div class="card">
+          <span class="badge">{{ it.badge }}</span>
+          <h3 style="margin-top:10px;">{{ it.title }}</h3>
+          <div class="sub">{{ it.sub }}</div>
+          <div class="when">{{ it.when }}</div>
+          <p>{{ it.body_html | safe }}</p>
+        </div>
+{% endfor %}
+      </div>

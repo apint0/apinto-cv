@@ -1,0 +1,28 @@
+{% for g in experience.groups %}
+      <div class="exp-group">
+        <div class="tl-group-label">
+          <span class="ico">{{ m.icon(g.icon, 16) }}</span>
+          {{ g.label }}
+          <span class="ln"></span>
+        </div>
+        <div class="timeline">
+{% for it in g['items'] %}
+          <div class="tl-item{% if it.ongoing %} ongoing{% endif %}">
+            <div class="tl-top">
+              <span class="tl-role">{{ it.role }}</span>
+              <span class="tl-org">{{ it.org }}</span>
+{% if it.ongoing %}
+              <span class="badge">Now</span>
+{% endif %}
+            </div>
+            <div class="tl-meta">{{ it.dates }} <span class="dot">·</span> {{ it.location }}</div>
+            <ul>
+{% for b in it.bullets %}
+              <li>{{ b }}</li>
+{% endfor %}
+            </ul>
+          </div>
+{% endfor %}
+        </div>
+      </div>
+{% endfor %}

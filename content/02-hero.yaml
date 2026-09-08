@@ -1,0 +1,33 @@
+# Hero banner content — the top-of-page introduction. Also reused for the footer link row.
+eyebrow: "Machine Learning · Medical Imaging"
+name: "Adriano Pinto"
+initials: "AP"          # shown as a fallback monogram if assets/profile.jpg fails to load
+photo: "assets/profile.jpg"
+
+role_plain: "Senior AI Research"
+role_bold: "PhD in Computer Science"
+
+summary: >-
+  I am a researcher and data scientist drawn to multidisciplinary challenges, a path that took me
+  from Biomedical Engineering to a PhD in Machine Learning, specializing in Deep Learning for medical
+  imaging such as stroke, cardiac MR, and brain tumour segmentation. At heart I remain an individual
+  contributor: I like to read and follow the literature, prototype ideas, and turn technology into
+  real clinical applications. I stay hands-on, building ML solutions end to end.
+
+# `icon` keys must exist in content/01-icons.yaml. This same list drives the footer links (icons dropped there).
+links:
+  - label: "LinkedIn"
+    url: "https://www.linkedin.com/in/adrianopinto/"
+    icon: "linkedin"
+  - label: "ORCID"
+    url: "https://orcid.org/0000-0001-9397-3722"
+    icon: "orcid"
+  - label: "Google Scholar"
+    url: "https://scholar.google.com/citations?user=gokIeOIAAAAJ"
+    icon: "scholar"
+  - label: "Ciência Vitae"
+    url: "https://www.cienciavitae.pt/pt/F418-4F2D-D7DC"
+    icon: "cienciavitae"
+  - label: "GitHub"
+    url: "https://github.com/apint0?tab=repositories"
+    icon: "github"

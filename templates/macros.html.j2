@@ -1,0 +1,3 @@
+{% macro icon(name, size=None) -%}
+<svg viewBox="0 0 24 24"{% if size %} width="{{ size }}" height="{{ size }}"{% endif %} fill="currentColor">{% for p in icons[name] %}<path d="{{ p }}"/>{% endfor %}</svg>
+{%- endmacro %}

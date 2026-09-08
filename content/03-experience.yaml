@@ -1,0 +1,48 @@
+# Experience timeline, split into groups (Industry / Academia). Add a new group or item freely —
+# the template loops over both. Set `ongoing: true` for a role that is still current.
+groups:
+  - label: "Industry"
+    icon: "briefcase"
+    items:
+      - role: "Senior AI Research"
+        org: "iLoF"
+        ongoing: true
+        dates: "Jan 2026 — Ongoing"
+        location: "Portugal · Hybrid"
+        bullets:
+          - "Contribute to research and development of ML-based frameworks for classification of RAMAN and FTIR spectra."
+          - "Mentoring a brief team of data scientists, fostering innovation and collaboration."
+      - role: "Head of Research & Product"
+        org: "AI4MedImaging"
+        ongoing: false
+        dates: "Nov 2024 — Dec 2025"
+        location: "Portugal · Hybrid"
+        bullets:
+          - "Lead research and product teams, defining critical features and driving innovation."
+          - "Propose and oversee new research initiatives and product enhancements."
+          - "Remain hands-on, contributing to the development and implementation of AI models."
+      - role: "Senior Data Scientist"
+        org: "AI4MedImaging"
+        ongoing: false
+        dates: "Feb 2022 — Oct 2024"
+        location: "Portugal · Hybrid"
+        bullets:
+          - "Researched and developed AI-driven solutions focused on deep learning for segmentation and classification tasks, aligned with user requirements."
+      - role: "Data Scientist"
+        org: "DTx CoLab"
+        ongoing: false
+        dates: "Mar 2020 — Jan 2022"
+        location: "Guimarães, Portugal"
+        bullets:
+          - "End-to-end machine learning solutions, pipelines, and software packages, focused on anomaly detection, computer vision, and time-series analysis for industry stakeholders."
+
+  - label: "Academia"
+    icon: "academic-cap"
+    items:
+      - role: "Invited Assistant Professor"
+        org: "University of Minho"
+        ongoing: true
+        dates: "Sep 2018 — Ongoing"
+        location: "Braga, Portugal"
+        bullets:
+          - "Image Processing · Signal Processing · Level 1 Electronics Laboratory classes."

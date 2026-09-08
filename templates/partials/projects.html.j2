@@ -1,0 +1,9 @@
+      <p style="color:var(--muted); margin:-24px 0 28px; font-size:.95rem;">
+        {{ projects.intro }}
+        <a href="https://github.com/{{ site.github_user }}?tab=repositories" target="_blank" rel="noopener" style="color:var(--accent); font-weight:600;">github.com/{{ site.github_user }}</a>.
+      </p>
+      <div id="repo-grid" class="grid three" data-github-user="{{ site.github_user }}" data-max-repos="{{ projects.max_repos }}">
+        <div class="repo-loading card" style="grid-column:1/-1; text-align:center; color:var(--muted);">
+          Loading repositories…
+        </div>
+      </div>

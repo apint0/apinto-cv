@@ -1,0 +1,50 @@
+# Global site metadata, nav, and section order.
+# Everything here is plain text (auto-escaped in HTML) unless a field name ends in `_html`.
+title: "Adriano Pinto — Machine Learning / AI & Medical Imaging"
+description: >-
+  Adriano Pinto. Researcher and data scientist, PhD in Computer Science, hands-on with
+  Deep Learning for medical imaging (stroke, cardiac MR, brain tumour segmentation) and
+  turning research into real clinical applications.
+og_description: >-
+  Researcher and data scientist. PhD in Computer Science. Hands-on Deep Learning for
+  medical imaging, turning research into real clinical applications.
+
+location: "Braga, Portugal"
+footer_note: "Hosted on GitHub Pages."
+
+github_user: "apint0"
+
+# The exact author string to bold in the Publications list (matches "authors" entries verbatim).
+highlight_name: "A. Pinto"
+
+# Order here drives both the nav bar and the numbered sections (01, 02, ...) on the page.
+# `partial` is the template file rendered inside each <section>.
+sections:
+  - id: experience
+    nav_label: "Experience"
+    title: "Experience"
+    partial: "experience.html.j2"
+  - id: education
+    nav_label: "Education"
+    title: "Education"
+    partial: "education.html.j2"
+  - id: activities
+    nav_label: "Activities"
+    title: "Scientific Activities"
+    partial: "activities.html.j2"
+  - id: publications
+    nav_label: "Publications"
+    title: "Key Publications"
+    partial: "publications.html.j2"
+  - id: projects
+    nav_label: "Projects"
+    title: "Projects & Open Source"
+    partial: "projects.html.j2"
+  - id: certificates
+    nav_label: "Certificates"
+    title: "Certificates"
+    partial: "certificates.html.j2"
+  - id: skills
+    nav_label: "Skills"
+    title: "Skills & Strengths"
+    partial: "skills.html.j2"

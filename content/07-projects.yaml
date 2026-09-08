@@ -1,0 +1,4 @@
+# The Projects section fetches public repos live from the GitHub API at page-load time (see
+# static/script.js), so there's no repo list to maintain here — just the fetch settings.
+intro: "Public repositories, pulled live from"
+max_repos: 6

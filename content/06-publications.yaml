@@ -1,0 +1,61 @@
+# Key publications, grouped (Journal / Conference). `authors` is plain text — the template
+# automatically bolds `site.highlight_name` ("A. Pinto") wherever it appears. `details` (volume/
+# pages) is optional; leave it out or empty to skip that comma-separated segment.
+groups:
+  - tag: "Journal"
+    label: "Journal Articles"
+    items:
+      - authors: "A. Pinto, J. Amorim, A. Hakim, V. Alves, M. Reyes, C. A. Silva"
+        title: "Prediction of stroke lesion at 90-day follow-up by fusing raw DSC-MRI with parametric maps using deep learning"
+        venue: "IEEE Access"
+        details: "vol. 9, pp. 26260–26270"
+        year: 2021
+      - authors: "A. Pinto, S. Pereira, R. Meier, et al."
+        title: "Combining unsupervised and supervised learning for predicting the final stroke lesion"
+        venue: "Medical Image Analysis"
+        details: "vol. 69, p. 101888"
+        year: 2021
+      - authors: "S. Pereira, A. Pinto, J. Amorim, A. Ribeiro, V. Alves, C. A. Silva"
+        title: "Adaptive feature recombination and recalibration for semantic segmentation with fully convolutional networks"
+        venue: "IEEE Transactions on Medical Imaging"
+        details: ""
+        year: 2019
+      - authors: "A. Pinto, R. McKinley, V. Alves, R. Wiest, C. A. Silva, M. Reyes, et al."
+        title: "Stroke lesion outcome prediction based on MRI imaging combined with clinical information"
+        venue: "Frontiers in Neurology"
+        details: "vol. 9, p. 1060"
+        year: 2018
+      - authors: "A. Pinto, S. Pereira, D. Rasteiro, C. A. Silva"
+        title: "Hierarchical brain tumour segmentation using extremely randomized trees"
+        venue: "Pattern Recognition"
+        details: "vol. 82, pp. 105–117"
+        year: 2018
+      - authors: "S. Pereira, A. Pinto, V. Alves, C. A. Silva"
+        title: "Brain tumor segmentation using convolutional neural networks in MRI images"
+        venue: "IEEE Transactions on Medical Imaging"
+        details: "vol. 35, no. 5, pp. 1240–1251"
+        year: 2016
+
+  - tag: "Conference"
+    label: "Conference Proceedings"
+    items:
+      - authors: "J. Amorim, A. Pinto, S. Pereira, C. A. Silva"
+        title: "Segmentation squeeze-and-excitation blocks in stroke lesion outcome prediction"
+        venue: "IEEE ENBENG"
+        details: "pp. 1–4"
+        year: 2019
+      - authors: "A. Pinto, S. Pereira, R. Meier, et al."
+        title: "Enhancing clinical MRI perfusion maps with data-driven maps of complementary nature for lesion outcome prediction"
+        venue: "MICCAI 2018"
+        details: "pp. 107–115"
+        year: 2018
+      - authors: "S. Pereira, A. Pinto, V. Alves, C. A. Silva"
+        title: "Deep convolutional neural networks for the segmentation of gliomas in multi-sequence MRI"
+        venue: "BrainLes 2015"
+        details: "Springer, pp. 131–143"
+        year: 2015
+      - authors: "A. Pinto, S. Pereira, H. Correia, J. Oliveira, D. M. Rasteiro, C. A. Silva"
+        title: "Brain tumour segmentation based on extremely randomized forest with high-level features"
+        venue: "IEEE EMBC"
+        details: "pp. 3037–3040"
+        year: 2015

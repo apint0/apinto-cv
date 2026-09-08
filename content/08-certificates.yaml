@@ -1,0 +1,7 @@
+# Certificate cards. Add another list entry to show more than one. `icon` is optional and
+# defaults to "certificate" (see content/01-icons.yaml).
+items:
+  - title: "Coursera Certificate"
+    issuer: "Stanford Online"
+    credential_id: "D29R83555T9S"
+    url: "https://www.coursera.org/account/accomplishments/certificate/D29R83555T9S"

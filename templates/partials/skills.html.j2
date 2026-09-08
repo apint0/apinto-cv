@@ -1,0 +1,39 @@
+      <div class="skill-cols">
+        <div class="panel">
+          <h3>Programming &amp; Tooling</h3>
+          <div class="chips">
+{% for p in skills.programming %}
+            <span class="chip"><span class="k">▹</span>{{ p }}</span>
+{% endfor %}
+          </div>
+
+          <h3 style="margin-top:26px;">Strengths</h3>
+          <div class="chips">
+{% for s in skills.strengths %}
+            <span class="chip">{{ s }}</span>
+{% endfor %}
+          </div>
+
+          <h3 style="margin-top:26px;">Areas of Interest</h3>
+          <div class="interest-tags">
+{% for i in skills.interests %}
+            <span>{{ i }}</span>
+{% endfor %}
+          </div>
+        </div>
+
+        <div class="panel">
+          <h3>Languages</h3>
+{% for l in skills.languages %}
+          <div class="lang-row">
+            <span class="lname">{{ l.name }}</span>
+            <span class="dots">{% for n in range(skills.max_level) %}<i{% if n < l.level %} class="on"{% endif %}></i>{% endfor %}</span>
+          </div>
+{% endfor %}
+
+          <h3 style="margin-top:26px;">Focus</h3>
+          <p style="font-size:.92rem;color:#3d4b66;">
+            {{ skills.focus }}
+          </p>
+        </div>
+      </div>

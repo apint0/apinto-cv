@@ -1,0 +1,13 @@
+      <div class="grid two">
+{% for c in certificates['items'] %}
+        <a class="cert-card card" href="{{ c.url }}" target="_blank" rel="noopener">
+          <div class="cert-badge">{{ m.icon(c.icon | default('certificate'), 22) }}</div>
+          <div>
+            <h3>{{ c.title }}</h3>
+            <div class="sub">{{ c.issuer }}</div>
+            <div class="when">Verified credential · {{ c.credential_id }}</div>
+            <p class="cert-cta">View credential →</p>
+          </div>
+        </a>
+{% endfor %}
+      </div>

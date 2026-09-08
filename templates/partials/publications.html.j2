@@ -1,0 +1,10 @@
+{% for g in publications.groups %}
+      <div class="pub-group">
+        <h3><span class="tag">{{ g.tag }}</span> {{ g.label }}</h3>
+        <ol class="pubs">
+{% for it in g['items'] %}
+          <li>{{ it.authors | highlight(site.highlight_name) }}{{ '' if it.authors.endswith('.') else '.' }} &ldquo;{{ it.title }}.&rdquo; <span class="venue">{{ it.venue }}</span>{% if it.details %}, {{ it.details }}{% endif %}, <span class="yr">{{ it.year }}</span>.</li>
+{% endfor %}
+        </ol>
+      </div>
+{% endfor %}
