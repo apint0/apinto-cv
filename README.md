@@ -2,7 +2,7 @@
 
 A clean, single-page personal CV site — Machine Learning / Artificial Intelligence &amp; Medical Imaging.
 
-**Live site:** https://apint0.github.io/apinto-bio/
+**Live site:** https://apint0.github.io/apinto-cv/
 
 ## About
 Welcome to my bio :) It presents my professional experience, education, scientific activities, key
