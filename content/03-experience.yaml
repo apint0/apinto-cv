@@ -1,11 +1,13 @@
 # Experience timeline, split into groups (Industry / Academia). Add a new group or item freely —
 # the template loops over both. Set `ongoing: true` for a role that is still current.
+# `logo` points to an SVG or image file under assets/ — optional, omit if no logo.
 groups:
   - label: "Industry"
     icon: "briefcase"
     items:
       - role: "Senior AI Research"
         org: "iLoF"
+        logo: "assets/logos/ilof-logo.png"
         ongoing: true
         dates: "Jan 2026 — Ongoing"
         location: "Portugal · Hybrid"
@@ -14,6 +16,7 @@ groups:
           - "Mentoring a brief team of data scientists, fostering innovation and collaboration."
       - role: "Head of Research & Product"
         org: "AI4MedImaging"
+        logo: "assets/logos/ai4cmr-logo.png"
         ongoing: false
         dates: "Nov 2024 — Dec 2025"
         location: "Portugal · Hybrid"
@@ -23,6 +26,7 @@ groups:
           - "Remain hands-on, contributing to the development and implementation of AI models."
       - role: "Senior Data Scientist"
         org: "AI4MedImaging"
+        logo: "assets/logos/ai4cmr-logo.png"
         ongoing: false
         dates: "Feb 2022 — Oct 2024"
         location: "Portugal · Hybrid"
@@ -30,6 +34,7 @@ groups:
           - "Researched and developed AI-driven solutions focused on deep learning for segmentation and classification tasks, aligned with user requirements."
       - role: "Data Scientist"
         org: "DTx CoLab"
+        logo: "assets/logos/dtx-logo.png"
         ongoing: false
         dates: "Mar 2020 — Jan 2022"
         location: "Guimarães, Portugal"
@@ -41,6 +46,7 @@ groups:
     items:
       - role: "Invited Assistant Professor"
         org: "University of Minho"
+        logo: "assets/logos/uminho-logo.svg"
         ongoing: true
         dates: "Sep 2018 — Ongoing"
         location: "Braga, Portugal"
