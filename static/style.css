@@ -158,6 +158,8 @@ section { padding: 70px 0 10px; }
   box-shadow: 0 0 0 4px rgba(91,157,217,.14);
 }
 .tl-item.ongoing::before { background: var(--accent); }
+.tl-logo { margin-bottom: 12px; }
+.tl-logo img { max-width: 120px; max-height: 60px; object-fit: contain; border-radius: 6px; background: #f9f9f9; padding: 8px; }
 .tl-top { display: flex; flex-wrap: wrap; align-items: baseline; gap: 8px 14px; }
 .tl-role { font-size: 1.12rem; font-weight: 600; color: var(--navy-800); }
 .tl-org { font-weight: 600; color: var(--accent); font-size: .98rem; }
@@ -189,6 +191,14 @@ section { padding: 70px 0 10px; }
 .card .sub { color: var(--accent); font-weight: 600; font-size: .9rem; }
 .card .when { color: var(--muted); font-size: .82rem; margin: 8px 0 12px; font-weight: 500; }
 .card p { font-size: .93rem; color: #3d4b66; }
+.edu-logo {
+  width: 48px; height: 48px;
+  object-fit: contain;
+  margin-bottom: 12px;
+  opacity: 0.85;
+  transition: opacity .2s;
+}
+.card:hover .edu-logo { opacity: 1; }
 
 /* ---------- REPO CARDS ---------- */
 a.repo-card { display: flex; flex-direction: column; gap: 10px; text-decoration: none; }
@@ -215,6 +225,15 @@ a.cert-card { display: flex; gap: 16px; align-items: flex-start; text-decoration
   color: var(--accent-bright); display: grid; place-items: center;
 }
 .cert-card .cert-cta { color: var(--accent); font-weight: 600; font-size: .86rem; margin-top: 10px; }
+a.cert-link {
+  display: inline-block;
+  color: var(--accent);
+  font-weight: 600;
+  font-size: .86rem;
+  margin-top: 12px;
+  transition: color .2s;
+}
+a.cert-link:hover { color: var(--accent-bright); }
 
 /* ---------- ACTIVITIES ---------- */
 .chips { display: flex; flex-wrap: wrap; gap: 10px; }

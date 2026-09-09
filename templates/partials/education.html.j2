@@ -1,11 +1,17 @@
       <div class="grid three">
 {% for it in education['items'] %}
         <div class="card">
+          {% if it.logo %}
+          <img src="{{ it.logo }}" alt="{{ it.sub }}" class="edu-logo"/>
+          {% endif %}
           <span class="badge">{{ it.badge }}</span>
           <h3 style="margin-top:10px;">{{ it.title }}</h3>
           <div class="sub">{{ it.sub }}</div>
           <div class="when">{{ it.when }}</div>
           <p>{{ it.body_html | safe }}</p>
+          {% if it.certificate %}
+          <a href="{{ it.certificate }}" target="_blank" rel="noopener" class="cert-link">View certificate →</a>
+          {% endif %}
         </div>
 {% endfor %}
       </div>

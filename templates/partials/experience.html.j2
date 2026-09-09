@@ -8,6 +8,11 @@
         <div class="timeline">
 {% for it in g['items'] %}
           <div class="tl-item{% if it.ongoing %} ongoing{% endif %}">
+{% if it.logo %}
+            <div class="tl-logo">
+              <img src="{{ it.logo }}" alt="{{ it.org }} logo" />
+            </div>
+{% endif %}
             <div class="tl-top">
               <span class="tl-role">{{ it.role }}</span>
               <span class="tl-org">{{ it.org }}</span>
