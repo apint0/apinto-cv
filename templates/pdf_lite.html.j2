@@ -1,0 +1,278 @@
+{% import 'macros.html.j2' as m with context %}<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>{{ site.title }} — LITE</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,600&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <style>
+    :root {
+      --navy-900: #0a1730;
+      --navy-700: #16305f;
+      --accent: #5b9dd9;
+      --ink: #16233d;
+      --muted: #5c6b85;
+      --line: #e3e8f0;
+      --bg-soft: #eef2f9;
+    }
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    html, body { width: 100%; }
+    body {
+      font-family: 'Inter', sans-serif;
+      font-size: 10px;
+      line-height: 1.5;
+      color: var(--ink);
+      background: white;
+      padding: 30px 28px;
+    }
+
+    /* HEADER */
+    .header {
+      display: grid;
+      grid-template-columns: 1fr 110px;
+      gap: 16px;
+      margin-bottom: 20px;
+      align-items: start;
+      border-bottom: 2px solid var(--accent);
+      padding-bottom: 15px;
+    }
+
+    .header-text h1 {
+      font-family: 'Fraunces', serif;
+      font-size: 24px;
+      font-weight: 500;
+      margin-bottom: 3px;
+      color: var(--navy-900);
+    }
+
+    .header-text .title {
+      font-size: 11px;
+      font-weight: 700;
+      color: var(--accent);
+      text-transform: uppercase;
+      letter-spacing: 0.8px;
+      margin-bottom: 8px;
+    }
+
+    .contact-info {
+      font-size: 9px;
+      color: var(--muted);
+      line-height: 1.6;
+    }
+
+    .contact-info span {
+      display: block;
+    }
+
+    .photo {
+      width: 110px;
+      height: 110px;
+      border-radius: 50%;
+      object-fit: cover;
+      border: 3px solid var(--accent);
+      box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    }
+
+    /* LINKS */
+    .links-row {
+      margin-top: 8px;
+      font-size: 8px;
+    }
+
+    .links-row a {
+      color: var(--accent);
+      text-decoration: underline;
+    }
+
+    /* FOCUS SECTION */
+    .focus-panel {
+      background: linear-gradient(135deg, rgba(91,157,217,0.1), rgba(91,157,217,0.05));
+      border-left: 3px solid var(--accent);
+      padding: 10px;
+      margin-bottom: 14px;
+      border-radius: 3px;
+      font-size: 9px;
+      line-height: 1.5;
+    }
+
+    .focus-panel .label {
+      font-size: 8px;
+      font-weight: 700;
+      color: var(--navy-700);
+      text-transform: uppercase;
+      letter-spacing: 0.6px;
+      margin-bottom: 5px;
+    }
+
+    h2 {
+      font-size: 11px;
+      font-weight: 700;
+      margin-top: 14px;
+      margin-bottom: 8px;
+      text-transform: uppercase;
+      letter-spacing: 0.5px;
+      color: var(--navy-900);
+      border-bottom: 1px solid var(--line);
+      padding-bottom: 4px;
+    }
+
+    .section { margin-bottom: 12px; }
+
+    .job {
+      margin-bottom: 9px;
+      padding-bottom: 8px;
+      border-bottom: 1px dotted var(--line);
+    }
+
+    .job:last-child {
+      border-bottom: none;
+    }
+
+    .job-title {
+      font-weight: 700;
+      font-size: 10px;
+      color: var(--navy-900);
+    }
+
+    .job-company {
+      font-size: 9px;
+      color: var(--accent);
+      font-weight: 600;
+      margin-top: 1px;
+    }
+
+    .job-meta {
+      font-size: 8px;
+      color: var(--muted);
+      margin-top: 2px;
+      margin-bottom: 5px;
+    }
+
+    .job-bullets {
+      margin: 0;
+      padding-left: 10px;
+      list-style: none;
+    }
+
+    .job-bullets li {
+      margin-bottom: 2px;
+      font-size: 9px;
+      line-height: 1.3;
+    }
+
+    .job-bullets li:before {
+      content: "• ";
+      color: var(--accent);
+      font-weight: 700;
+      margin-right: 4px;
+    }
+
+    .skill-group {
+      margin-bottom: 8px;
+    }
+
+    .skill-group-title {
+      font-weight: 700;
+      font-size: 9px;
+      color: var(--navy-700);
+      margin-bottom: 4px;
+      text-transform: uppercase;
+      letter-spacing: 0.4px;
+    }
+
+    .skill-tags {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 4px;
+    }
+
+    .skill-tag {
+      background: linear-gradient(135deg, var(--navy-700), #0f2247);
+      color: white;
+      padding: 2px 6px;
+      border-radius: 2px;
+      font-size: 8px;
+      font-weight: 500;
+    }
+
+    @page { size: A4; margin: 15px; }
+    @media print { body { padding: 0; } }
+  </style>
+</head>
+<body>
+
+<!-- HEADER WITH PHOTO -->
+<div class="header">
+  <div class="header-text">
+    <div class="title">{{ hero.eyebrow }}</div>
+    <h1>{{ hero.name }}</h1>
+    <div class="contact-info">
+      <span>{{ hero.email }}</span>
+      <span>{{ hero.phone }}</span>
+      <span>{{ hero.location }}</span>
+    </div>
+    <div class="links-row">
+{% for l in hero.links %}<a href="{{ l.url }}">{{ l.label }}</a>{% if not loop.last %} · {% endif %}{% endfor %}
+    </div>
+  </div>
+  <img class="photo" src="file://{{ site.base_path }}/assets/profile.jpg" alt="{{ hero.name }}" />
+</div>
+
+<!-- FOCUS PANEL -->
+<div class="focus-panel">
+  <div class="label">Professional Focus</div>
+  <div>{{ skills.focus }}</div>
+</div>
+
+<!-- EXPERIENCE -->
+<section class="section">
+  <h2>Professional Experience</h2>
+{% for g in experience.groups %}
+{% for it in g['items'] %}
+  <div class="job">
+    <div class="job-title">{{ it.role }}</div>
+    <div class="job-company">{{ it.org }}</div>
+    <div class="job-meta">{{ it.dates }} · {{ it.location }}</div>
+    <ul class="job-bullets">
+{% for b in it.bullets %}
+      <li>{{ b }}</li>
+{% endfor %}
+    </ul>
+  </div>
+{% endfor %}
+{% endfor %}
+</section>
+
+<!-- EDUCATION -->
+<section class="section">
+  <h2>Education</h2>
+{% for it in education['items'] %}
+  <div class="job">
+    <div class="job-title">{{ it.title }}</div>
+    <div class="job-company">{{ it.sub }}</div>
+    <div class="job-meta">{{ it.when }}</div>
+  </div>
+{% endfor %}
+</section>
+
+<!-- SKILLS -->
+<section class="section">
+  <h2>Technical Skills</h2>
+  <div class="skill-group">
+    <div class="skill-group-title">Programming & Tooling</div>
+    <div class="skill-tags">
+{% for p in skills.programming %}<span class="skill-tag">{{ p }}</span>{% endfor %}
+    </div>
+  </div>
+  <div class="skill-group">
+    <div class="skill-group-title">Strengths</div>
+    <div class="skill-tags">
+{% for s in skills.strengths %}<span class="skill-tag">{{ s }}</span>{% endfor %}
+    </div>
+  </div>
+</section>
+
+</body>
+</html>

@@ -12,7 +12,7 @@ items:
   - badge: "Research"
     title: "Research Internship"
     sub: "ISTB — University of Bern"
-    when: "Oct 2016 — Dec 2018 · Bern, Switzerland"
+    when: "Oct 2016 — Feb 2017 · Bern, Switzerland"
     logo: "assets/logos/ubern-logo.svg"
     body_html: "Invited by Prof. Mauricio Reyes to predict final ischaemic stroke lesions, integrating imaging with patient meta-data for improved outcome prediction."
 

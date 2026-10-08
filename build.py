@@ -5,11 +5,14 @@ from pathlib import Path
 import yaml
 from jinja2 import Environment, FileSystemLoader, select_autoescape
 from markupsafe import Markup, escape
+from weasyprint import HTML
 
 ROOT = Path(__file__).parent
 CONTENT_DIR = ROOT / "content"
 TEMPLATES_DIR = ROOT / "templates"
 OUTPUT_FILE = ROOT / "index.html"
+PDF_LITE = ROOT / "Adriano_Pinto_CV_LITE.pdf"
+PDF_COMPLETE = ROOT / "Adriano_Pinto_CV_COMPLETE.pdf"
 
 
 def load_content() -> dict:
@@ -26,6 +29,7 @@ def load_content() -> dict:
         _, _, key = path.stem.partition("-")
         with open(path, encoding="utf-8") as f:
             context[key] = yaml.safe_load(f) or {}
+    context["site"]["base_path"] = str(ROOT)
     return context
 
 
@@ -38,6 +42,25 @@ def highlight_author(text: str, name: str) -> Markup:
     safe_text = str(escape(text))
     safe_name = str(escape(name))
     return Markup(safe_text.replace(safe_name, f'<span class="me">{safe_name}</span>'))
+
+
+def build_pdfs(context: dict, env: Environment) -> None:
+    """Generate LITE and COMPLETE PDF versions."""
+    try:
+        # LITE version: industry-focused, compact
+        template_lite = env.get_template("pdf_lite.html.j2")
+        html_lite = template_lite.render(**context)
+        HTML(string=html_lite).write_pdf(PDF_LITE)
+
+        # COMPLETE version: academic, full
+        template_complete = env.get_template("pdf_complete.html.j2")
+        html_complete = template_complete.render(**context)
+        HTML(string=html_complete).write_pdf(PDF_COMPLETE)
+
+        pdf_sizes = f"{PDF_LITE.stat().st_size//1024}KB, {PDF_COMPLETE.stat().st_size//1024}KB"
+        print(f"Generated {PDF_LITE.name} ({PDF_LITE.stat().st_size//1024}KB) and {PDF_COMPLETE.name} ({PDF_COMPLETE.stat().st_size//1024}KB).")
+    except Exception as e:
+        print(f"Warning: PDF generation failed ({type(e).__name__}: {e})")
 
 
 def build() -> None:
@@ -57,6 +80,9 @@ def build() -> None:
 
     n_files = len(list(CONTENT_DIR.glob("*.yaml")))
     print(f"Built {OUTPUT_FILE.name} ({len(html):,} bytes) from {n_files} content files.")
+
+    # Generate PDF versions
+    build_pdfs(context, env)
 
 
 if __name__ == "__main__":

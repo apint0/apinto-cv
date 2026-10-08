@@ -16,6 +16,18 @@
         </a>
 {% endfor %}
       </div>
+
+      <div class="downloads">
+        <span class="download-label">Download CV</span>
+        <a href="Adriano_Pinto_CV_LITE.pdf" download class="dl-btn dl-lite">
+          <svg viewBox="0 0 24 24" width="16" height="16" fill="currentColor"><path d="M19 13h-6v6h-2v-6H5v-2h6V5h2v6h6v2z"/></svg>
+          LITE
+        </a>
+        <a href="Adriano_Pinto_CV_COMPLETE.pdf" download class="dl-btn dl-complete">
+          <svg viewBox="0 0 24 24" width="16" height="16" fill="currentColor"><path d="M19 13h-6v6h-2v-6H5v-2h6V5h2v6h6v2z"/></svg>
+          COMPLETE
+        </a>
+      </div>
       </div>
       <img class="hero-photo" src="{{ hero.photo }}" alt="{{ hero.name }}"
            onerror="this.replaceWith(Object.assign(document.createElement('div'),{className:'hero-photo hero-monogram',textContent:'{{ hero.initials }}'}))" />

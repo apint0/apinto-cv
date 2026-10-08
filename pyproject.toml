@@ -6,6 +6,7 @@ requires-python = ">=3.9"
 dependencies = [
     "jinja2>=3.1",
     "pyyaml>=6.0",
+    "weasyprint>=60.0",
 ]
 
 [tool.uv]

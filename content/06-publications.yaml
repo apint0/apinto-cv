@@ -15,6 +15,11 @@ groups:
         venue: "Medical Image Analysis"
         details: "vol. 69, p. 101888"
         year: 2021
+      - authors: "S. Winzeck, A. Hakim, R. McKinley, A. Pinto, V. Alves, C. A. Silva, M. Pisov, et al."
+        title: "ISLES 2016 and 2017—Benchmarking Ischemic Stroke Lesion Outcome Prediction Based on Multispectral MRI"
+        venue: "Frontiers in Neurology"
+        details: "vol. 9"
+        year: 2018
       - authors: "S. Pereira, A. Pinto, J. Amorim, A. Ribeiro, V. Alves, C. A. Silva"
         title: "Adaptive feature recombination and recalibration for semantic segmentation with fully convolutional networks"
         venue: "IEEE Transactions on Medical Imaging"
@@ -34,6 +39,11 @@ groups:
         title: "Brain tumor segmentation using convolutional neural networks in MRI images"
         venue: "IEEE Transactions on Medical Imaging"
         details: "vol. 35, no. 5, pp. 1240–1251"
+        year: 2016
+      - authors: "S. Pereira, A. Pinto, J. Oliveira, A. M. Mendrik, J. H. Correia, C. A. Silva"
+        title: "Automatic brain tissue segmentation in MR images using Random Forests and Conditional Random Fields"
+        venue: "Journal of Neuroscience Methods"
+        details: "vol. 270, pp. 111–123"
         year: 2016
 
   - tag: "Conference"
