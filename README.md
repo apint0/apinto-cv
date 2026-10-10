@@ -47,7 +47,7 @@ editing a YAML file, not the HTML. The page layout, CSS, and JS live in
    | `03-experience.yaml` | Industry / Academia timeline |
    | `04-education.yaml` | Degree cards |
    | `05-activities.yaml` | Scientific activities list |
-   | `06-publications.yaml` | Journal & conference publications |
+   | `06-publications.yaml` | Journal, conference & preprint publications |
    | `07-projects.yaml` | GitHub live-fetch settings (repo list itself is not stored — see below) |
    | `08-certificates.yaml` | Certificate cards |
    | `09-skills.yaml` | Programming, strengths, interests, languages |

@@ -89,3 +89,12 @@ groups:
         venue: "IEEE ENBENG"
         details: "pp. 1–5"
         year: 2015
+
+  - tag: "Preprint"
+    label: "Preprints"
+    items:
+      - authors: "E. Costa, C. Barros, A. Pinto, N. Martins, L. Tondi, S. Pica, V. H. Pereira, M. Lombardi, et al."
+        title: "Clinical validation of a fully automated framework for ventricular segmentation and wall motion classification from cine CMR"
+        venue: "Research Square"
+        details: "preprint"
+        year: 2022
