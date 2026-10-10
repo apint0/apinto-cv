@@ -5,6 +5,11 @@ groups:
   - tag: "Journal"
     label: "Journal Articles"
     items:
+      - authors: "S. Fernandes, C. Barros, A. Pinto, V. H. Pereira, C. Lima, C. A. Silva"
+        title: "Modelling Stochastic Sensor Noise via Mask-Conditioned Diffusion for Data Augmentation in Low-SNR LGE-CMR"
+        venue: "Sensors"
+        details: "vol. 26, no. 10, p. 2933"
+        year: 2026
       - authors: "A. Pinto, J. Amorim, A. Hakim, V. Alves, M. Reyes, C. A. Silva"
         title: "Prediction of stroke lesion at 90-day follow-up by fusing raw DSC-MRI with parametric maps using deep learning"
         venue: "IEEE Access"
@@ -49,6 +54,16 @@ groups:
   - tag: "Conference"
     label: "Conference Proceedings"
     items:
+      - authors: "I. R. Lima, N. Leite, A. Pinto, P. M. Pires, C. Martins, N. Lopes"
+        title: "eSardine: A General Purpose Platform with Autonomous AI and Explainable Outputs"
+        venue: "ICAART"
+        details: "vol. 2, pp. 612–625"
+        year: 2022
+      - authors: "C. A. Silva, A. Pinto, S. Pereira, A. Lopes"
+        title: "Multi-stage deep layer aggregation for brain tumor segmentation"
+        venue: "MICCAI BrainLes Workshop"
+        details: "pp. 179–188"
+        year: 2020
       - authors: "J. Amorim, A. Pinto, S. Pereira, C. A. Silva"
         title: "Segmentation squeeze-and-excitation blocks in stroke lesion outcome prediction"
         venue: "IEEE ENBENG"
@@ -68,4 +83,9 @@ groups:
         title: "Brain tumour segmentation based on extremely randomized forest with high-level features"
         venue: "IEEE EMBC"
         details: "pp. 3037–3040"
+        year: 2015
+      - authors: "A. Pinto, S. Pereira, H. Dinis, C. A. Silva, D. M. L. D. Rasteiro"
+        title: "Random decision forests for automatic brain tumor segmentation on multi-modal MRI images"
+        venue: "IEEE ENBENG"
+        details: "pp. 1–5"
         year: 2015
