@@ -12,7 +12,7 @@ summary: >-
   from Biomedical Engineering to a PhD in Machine Learning, specializing in Deep Learning for medical
   imaging such as stroke, cardiac MR, and brain tumour segmentation. At heart I remain an individual
   contributor: I like to read and follow the literature, prototype ideas, and turn technology into
-  real clinical applications. I stay hands-on, building ML solutions end to end.
+  real clinical applications.
 
 # `icon` keys must exist in content/01-icons.yaml. This same list drives the footer links (icons dropped there).
 links:

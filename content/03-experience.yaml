@@ -14,11 +14,11 @@ groups:
         bullets:
           - "Contribute to research and development of ML-based frameworks for classification of RAMAN and FTIR spectra."
           - "Mentoring a brief team of data scientists, fostering innovation and collaboration."
-      - role: "Head of Research & Product"
+      - role: "Head of AI"
         org: "AI4MedImaging"
         logo: "assets/logos/ai4cmr-logo.png"
         ongoing: false
-        dates: "Nov 2024 — Dec 2025"
+        dates: "Oct 2024 — Dec 2025"
         location: "Portugal · Hybrid"
         bullets:
           - "Lead research and product teams, defining critical features and driving innovation."
