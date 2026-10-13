@@ -4,7 +4,7 @@ name: "Adriano Pinto"
 initials: "AP"          # shown as a fallback monogram if assets/profile.jpg fails to load
 photo: "assets/profile.jpg"
 
-role_plain: "Senior AI Research"
+role_plain: "Senior AI Researcher"
 role_bold: "PhD in Computer Science"
 
 summary: >-
