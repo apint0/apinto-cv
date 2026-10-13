@@ -5,7 +5,7 @@ groups:
   - label: "Industry"
     icon: "briefcase"
     items:
-      - role: "Senior AI Research"
+      - role: "Senior AI Researcher"
         org: "iLoF"
         logo: "assets/logos/ilof-logo.png"
         ongoing: true
