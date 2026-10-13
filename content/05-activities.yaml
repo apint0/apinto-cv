@@ -1,11 +1,11 @@
 # Scientific activities list. `text_html` allows inline tags (e.g. <b>) — escape entities
 # yourself there (&amp; not &, — is fine as a plain unicode character).
 items:
-  - mark: "17"
-    text_html: "<b>Author of 17 publications</b> across journals and conferences in medical imaging and machine learning — over <b>4,700 citations</b> (h-index 13, Google Scholar)."
+  - mark: "16"
+    text_html: "<b>Author of 16 peer-reviewed publications</b> across journals and conferences in medical imaging and machine learning — over <b>4,700 citations</b> (h-index 13, Google Scholar)."
   - mark: "Q1"
     text_html: "<b>Reviewer for several Q1 journals</b> — Frontiers in Neurology, Neurocomputing, Pattern Recognition, and Elsevier journals."
-  - mark: "GE"
+  - mark: "TE"
     text_html: "<b>Topic Editor</b> — Frontiers in Neurology."
   - mark: "⚖"
     text_html: "<b>Jury</b> in academic examination boards."
